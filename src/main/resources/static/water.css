@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    color: #666;
+    font: 16px/1.618 sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a{
+    padding: .25rem .5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{ 
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    background-color: #666;
+    /* position: fixed;
+    top: 0; */
+    width: 100%;
+    text-align: center;
+}
+
+#header__logo{
+    margin-left: 3rem;
+    color: #fff;
+    padding: 1.25rem 0rem 1.25rem 0rem;
+    
+}
+
+/* .header__nav_list{
+    display: flex;
+}
+
+.header__nav_listItem{
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.header__nav_listItem:hover{
+    background-color: #999;
+    border: 1px solid #666;
+} */
+
+.container{
+  background-color: #fff;
+  margin: 2rem auto;
+  max-width: 60rem;
+  width: 90%;
+  padding-top: 5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__title{
+  text-align: center;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.cardImage {
+  height: auto;
+  max-width: 100%;
+
+}
+
+.card__description{
+  font-size: .75rem;
+  padding: .5rem;
+}
+
+.card__subtitle{
+  text-align: center;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.list{
+  list-style-type: none;
+  font-size: .75rem;
+  padding: .5rem;
+}
+
+.flip__card {
+  background-color: gray;
+  width: 460px;
+  height:700px;
+  margin: 0rem .5rem 0rem .5rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip__card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip__card:hover .flip__card_inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip__card_front,
+.flip__card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip__card_front {
+  background-color:gray;
+  color: white;
+}
+
+/* Style the back side */
+.flip__card_back {
+  background-color: gray;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.footer{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: #666;
+}
+
+.footer__copyright{
+  margin-left: 3rem;
+  color: #fff;
+}
+
+/* .footer__social{
+  margin: 1rem 3rem 1rem 0rem;
+} */
